@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Big Ray — Full Stack Dev | Cybersecurity</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🔥 Big Ray</h1>
+    <p>Full Stack Web Developer • Cybersecurity Enthusiast • Hustler</p>
+    <button class="theme-toggle" onclick="toggleTheme()">🌙 Toggle Theme</button>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About Me 💡</h2>
+      <p>Hey there! I'm <strong>Big Ray</strong>, a passionate developer & cybersecurity learner. I design clean websites, build smart interfaces, and grind legally to become the best in the game.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills 💻</h2>
+      <div class="skill-card">HTML5</div>
+      <div class="skill-card">CSS3</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Git & GitHub</div>
+      <div class="skill-card">Linux & Hacking Basics</div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects 🚀</h2>
+      <div class="project-card" onclick="toggleProject('proj1')">
+        <h3>🔥 Hacker Terminal Simulator</h3>
+        <p>A fake terminal UI built with JavaScript for roleplay, learning, and fun.</p>
+        <div class="project-details" id="proj1">
+          <p>Made with vanilla JS and styled with cyberpunk theme. CLI commands simulate hacking actions.</p>
+        </div>
+      </div>
+      <div class="project-card" onclick="toggleProject('proj2')">
+        <h3>🧠 Quiz Master</h3>
+        <p>A logic-based quiz app with scores and clean UI.</p>
+        <div class="project-details" id="proj2">
+          <p>Includes timed questions, local storage for scores, and responsive design.</p>
+        </div>
+      </div>
+    </section><section id="experience">
+      <h2>Work Experience 💼</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>Freelance Web Developer (2023 - Present)</h3>
+          <p>Created modern websites and landing pages. Used HTML, CSS, and JS to solve real problems.</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Cybersecurity Student (2024 - Present)</h3>
+          <p>Learning ethical hacking, Linux, web vulnerability, and terminal skills every day.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me 📬</h2>
+      <p><strong>Gmail:</strong> <a href="mailto:bigr6963@gmail.com">bigr6963@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/2348139680482" target="_blank">Chat on WhatsApp</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/bigr6963" target="_blank">@bigr6963</a></p>
+      <p><strong>GitHub:</strong> <a href="https://github.com/BigRayDev" target="_blank">github.com/BigRayDev</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 </p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('dark');
+    }
+
+    function toggleProject(id) {
+      const el = document.getElementById(id);
+      el.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
